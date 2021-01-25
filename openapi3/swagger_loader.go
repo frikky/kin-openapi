@@ -29,6 +29,7 @@ func failedToResolveRefFragmentPart(value string, what string) error {
 }
 
 type SwaggerLoader struct {
+	GenerateWhenFailure    bool
 	IsExternalRefsAllowed  bool
 	Context                context.Context
 	LoadSwaggerFromURIFunc func(loader *SwaggerLoader, url *url.URL) (*Swagger, error)
@@ -79,7 +80,11 @@ func (swaggerLoader *SwaggerLoader) loadSingleElementFromURI(ref string, rootPat
 
 	resolvedPath, err := resolvePath(rootPath, parsedURL)
 	if err != nil {
-		return fmt.Errorf("could not resolve path: %v", err)
+		if swaggerLoader.GenerateWhenFailure {
+			return nil
+		} else {
+			return fmt.Errorf("could not resolve path: %v", err)
+		}
 	}
 
 	data, err := readURL(resolvedPath)
