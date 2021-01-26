@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/frikky/kin-openapi/openapi3"
 )
 
 // ValidationErrorEncoder wraps a base ErrorEncoder to handle ValidationErrors

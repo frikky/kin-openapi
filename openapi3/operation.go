@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/getkin/kin-openapi/jsoninfo"
+	"github.com/frikky/kin-openapi/jsoninfo"
 	"github.com/go-openapi/jsonpointer"
 )
 

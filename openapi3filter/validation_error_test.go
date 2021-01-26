@@ -10,7 +10,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/frikky/kin-openapi/openapi3"
 	"github.com/stretchr/testify/require"
 )
 

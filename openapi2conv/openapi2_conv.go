@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/getkin/kin-openapi/openapi2"
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/frikky/kin-openapi/openapi2"
+	"github.com/frikky/kin-openapi/openapi3"
 )
 
 // ToV3Swagger converts an OpenAPIv2 spec to an OpenAPIv3 spec

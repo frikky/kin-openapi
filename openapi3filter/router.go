@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/getkin/kin-openapi/openapi3"
-	"github.com/getkin/kin-openapi/pathpattern"
+	"github.com/frikky/kin-openapi/openapi3"
+	"github.com/frikky/kin-openapi/pathpattern"
 )
 
 type Route struct {

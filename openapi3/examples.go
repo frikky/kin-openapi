@@ -3,7 +3,7 @@ package openapi3
 import (
 	"fmt"
 
-	"github.com/getkin/kin-openapi/jsoninfo"
+	"github.com/frikky/kin-openapi/jsoninfo"
 	"github.com/go-openapi/jsonpointer"
 )
 
